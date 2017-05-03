@@ -87,6 +87,12 @@
 		<Unit filename="/home/nathan/git/poissonsolver/main.cpp">
 			<Option target="poissonsolver"/>
 		</Unit>
+		<Unit filename="/home/nathan/git/poissonsolver/src/solver.cpp">
+			<Option target="poissonsolver"/>
+		</Unit>
+		<Unit filename="/home/nathan/git/poissonsolver/src/solver.h">
+			<Option target="poissonsolver"/>
+		</Unit>
 		<Unit filename="/home/nathan/git/poissonsolver/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

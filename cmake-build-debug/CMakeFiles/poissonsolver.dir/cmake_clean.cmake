@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/poissonsolver.dir/main.cpp.o"
+  "CMakeFiles/poissonsolver.dir/src/solver.cpp.o"
   "poissonsolver.pdb"
   "poissonsolver"
 )

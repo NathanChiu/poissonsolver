@@ -150,6 +150,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/poissonsolver.dir/build.make CMakeFiles/poissonsolver.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/solver.o: src/solver.cpp.o
+
+.PHONY : src/solver.o
+
+# target to build an object file
+src/solver.cpp.o:
+	$(MAKE) -f CMakeFiles/poissonsolver.dir/build.make CMakeFiles/poissonsolver.dir/src/solver.cpp.o
+.PHONY : src/solver.cpp.o
+
+src/solver.i: src/solver.cpp.i
+
+.PHONY : src/solver.i
+
+# target to preprocess a source file
+src/solver.cpp.i:
+	$(MAKE) -f CMakeFiles/poissonsolver.dir/build.make CMakeFiles/poissonsolver.dir/src/solver.cpp.i
+.PHONY : src/solver.cpp.i
+
+src/solver.s: src/solver.cpp.s
+
+.PHONY : src/solver.s
+
+# target to generate assembly for a file
+src/solver.cpp.s:
+	$(MAKE) -f CMakeFiles/poissonsolver.dir/build.make CMakeFiles/poissonsolver.dir/src/solver.cpp.s
+.PHONY : src/solver.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -162,6 +189,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/solver.o"
+	@echo "... src/solver.i"
+	@echo "... src/solver.s"
 .PHONY : help
 
 

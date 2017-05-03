@@ -1,6 +1,8 @@
 #include <iostream>
-
+#include "./src/solver.h"
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    poisson1D();
+
     return 0;
 }
