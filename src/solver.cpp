@@ -51,13 +51,11 @@ void poisson1D(void) {
     std::cout << "Finished in " << cycleCount << " iterations." << std::endl;
     int i = 0;
     while ( i < N ){
-        //std::cout << "V[" << i << "] = " << std::setprecision(20) << V[i] << "V" <<std::endl;
-        std::cout << i << "," << V[i] <<std::endl;
+        std::cout << "V[" << i << "] = " << std::setprecision(20) << V[i] << "V" <<std::endl;
+//        std::cout << i << "," << V[i] <<std::endl; //csv-friendly
         i++;
     }
 }
-
-//USEFUL:
 
 //    std::cout << EPS0 << std::endl;
 
