@@ -9,15 +9,11 @@
 #include <algorithm>
 #include <iomanip>
 #include <functional>
+void poisson1DJacobi( void );
 
-void poisson1D( void );
-
-void poisson1D(void) {
-
+void poisson1DJacobi(void) {
     //Constants
     double EPS0 = 8.85418782e-12; //Permittivity of free space
-
-//    std::cout << "Hello, World!" << std::endl;
     //Parameters
     unsigned int N = 10;           //Number of lattice points
     double sampleLength = 1e-3;   //Physical length of sample in meters
@@ -34,7 +30,6 @@ void poisson1D(void) {
                     rho.begin()+1, std::bind2nd(std::divides<double>(), EPS0 ) );
     V[0] = rho[0];
     V[N-1] = rho[N-1];
-
     //Computation loop
     do{
         currError = 0;  //reset error for every run
@@ -48,7 +43,8 @@ void poisson1D(void) {
         cycleCount++;
     }while( currError > maxError );
 
-    std::cout << "Finished in " << cycleCount << " iterations." << std::endl;
+    std::cout << "Finished in " << cycleCount << " iterations within " <<
+              maxError*100 << "% error." << std::endl;
     int i = 0;
     while ( i < N ){
         std::cout << "V[" << i << "] = " << std::setprecision(20) << V[i] << "V" <<std::endl;
@@ -58,19 +54,14 @@ void poisson1D(void) {
 }
 
 //    std::cout << EPS0 << std::endl;
-
 //    std::cout << "entering poisson" << std::endl;
-
 //    std::cout << (rho.begin()+2)[0] << std::endl;
-
 //    std::transform(n.begin(), n.end(), n.begin(),
 //                   std::bind1st(std::multiplies<T>(),pin));
-
 /*
     while ( i < N ){
         std::cout << rho[i] <<std::endl;
         i++;
     }
 */
-
 //std::transform( rho.begin()+1, rho.end()-1, rho.begin()+1, std::bind2nd(std::divides<double>(), EPS0 ) );

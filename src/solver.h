@@ -5,7 +5,7 @@
 #ifndef POISSONSOLVER_SOLVER_H
 #define POISSONSOLVER_SOLVER_H
 
-void poisson1D( void );
+void poisson1DJacobi( void );
 
 
 #endif //POISSONSOLVER_SOLVER_H
